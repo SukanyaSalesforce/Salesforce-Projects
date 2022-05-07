@@ -1,6 +1,9 @@
 public with sharing class CreateContact {
     public CreateContact() {
-  Contact con=new Contact(LastName='ammu');
+        for(integer i=1;i<=10;i++)
+        {
+  Contact con=new Contact(LastName='ammu'+i);
+        }
   insert con;
     }
 }
